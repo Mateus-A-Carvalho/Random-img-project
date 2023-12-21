@@ -13,3 +13,18 @@ html {
 body {
   height: 100%;
 }
+
+.main-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center ;
+}
+
+.btn {
+  display: block;
+  width: 6rem;
+  height: 3rem;
+  position: absolute;
+  bottom: 10%;
+}
