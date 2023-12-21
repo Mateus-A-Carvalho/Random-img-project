@@ -12,19 +12,41 @@ html {
 
 body {
   height: 100%;
+  font-size: 1.8rem;
+}
+
+h1.main-heading {
+  font-size: 4em;
+  margin: 3rem auto;
+  text-align: center;
+  border: 1px solid #000;
 }
 
 .main-content {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: space-evenly;
   align-items: center ;
+  max-width: 120rem;
+  height: auto;
+  margin: 5rem auto;
+  padding: 3.5rem;
+  border: 1px solid #000;
+}
+
+.img-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  margin: 3.5rem;
 }
 
 .btn {
   display: block;
   width: 6rem;
   height: 3rem;
-  position: absolute;
-  bottom: 10%;
 }
