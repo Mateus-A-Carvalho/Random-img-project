@@ -16,7 +16,7 @@ html {
 body {
   height: auto;
   font-size: 1.8rem;
-  background: url('../img/random-photo-bg01.png');
+  background: url(../img/random-photo-bg01.png);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-attachment: fixed;
