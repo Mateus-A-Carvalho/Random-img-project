@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
 * {
   margin: 0;
   padding: 0;
@@ -11,15 +14,27 @@ html {
 }
 
 body {
-  height: 100%;
+  height: auto;
   font-size: 1.8rem;
+  background: url('../img/random-photo-bg01.png') no-repeat center bottom;
+  background-attachment: fixed;
 }
 
 h1.main-heading {
   font-size: 4em;
   margin: 3rem auto;
+  width: 70%;
+  padding: 0.8rem 1.6rem;
   text-align: center;
-  border: 1px solid #000;
+  font-family: 'oswald';
+  color: #2b2b2b;
+  border: 1rem solid;
+  border-image-source: linear-gradient(
+    45deg,
+    #800080,
+    #cc00cc
+  );
+  border-image-slice: 1;
 }
 
 .main-content {
@@ -31,7 +46,9 @@ h1.main-heading {
   height: auto;
   margin: 5rem auto;
   padding: 3.5rem;
-  border: 1px solid #000;
+  background-color: rgb(255, 255, 240, .7);
+  border-radius: 1rem;
+  box-shadow: 0 0 .8rem rgba(0, 0, 0, .3);
 }
 
 .img-wrapper {
@@ -43,10 +60,38 @@ h1.main-heading {
 
 img {
   margin: 3.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 .8rem rgba(0, 0, 0, .3);
+}
+
+.button-wrapper {
+  margin: 3rem auto;
+  width: 100%;
+  height: auto;
 }
 
 .btn {
   display: block;
-  width: 6rem;
-  height: 3rem;
+  padding: .8rem 1.6rem;
+  width: 30rem;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  margin: 0 auto;
+  font-family: 'raleway';
+  font-weight: bold;
+  border-radius: 1rem;
+  color: #fffff0;
+  background-color: rgba(227, 15, 15, 0.8);
+}
+
+img:hover, 
+.btn:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.btn:active {
+  transform: scale(.95);
 }

@@ -14,6 +14,8 @@ const buttonClickGenerate = (btn) => {
         generatePicture();
         generatePicture();
         generatePicture();
+        generatePicture();
+        generatePicture();        
         generatePicture();        
     })
 }
